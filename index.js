@@ -150,8 +150,6 @@ class douyu_danmu extends events {
         let plat = 'pc_web'
         if (msg.ct == '1') { plat = 'android' } else if (msg.ct == '2') { plat = 'ios' }
 
-        console.log(msg);
-
         return {
             type: 'chat',
             time: new Date().getTime(),
@@ -172,6 +170,7 @@ class douyu_danmu extends events {
     _build_gift(msg) {
 
         const gift = this._gift_info[msg.gfid] || free_gift
+
         const msg_obj = {
             type: 'gift',
             time: new Date().getTime(),
@@ -182,6 +181,8 @@ class douyu_danmu extends events {
                 level: parseInt(msg.level),
                 brand:msg.bnn,
                 brandLevel:msg.bl,
+                giftid:msg.gfid,
+                giftcount:msg.gfcnt
             },
             id: `${msg.uid}${msg.rid}${msg.gfid}${msg.hits}${msg.level}`,
             count: parseInt(msg.gfcnt || 1),
