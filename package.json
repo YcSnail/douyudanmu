@@ -1,0 +1,30 @@
+{
+  "name": "douyu-danmu",
+  "version": "2.0.7",
+  "description": "douyu tv danmu module",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BacooTang/douyu-danmu.git"
+  },
+  "keywords": [
+    "douyu",
+    "douyu.tv",
+    "danmu"
+  ],
+  "dependencies": {
+    "socks": "^2.1.2",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "socks-proxy-agent": "^3.0.1"
+  },
+  "author": "BacooTang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BacooTang/douyu-danmu/issues"
+  },
+  "homepage": "https://github.com/BacooTang/douyu-danmu#readme"
+}
