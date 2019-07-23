@@ -1,5 +1,5 @@
 const douyu_danmu = require('./index')
-const roomid = '2020877'
+const roomid = '88660'
 const client = new douyu_danmu(roomid)
 const sendDb = require('./sendDb');
 

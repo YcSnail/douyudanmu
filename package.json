@@ -16,9 +16,10 @@
     "danmu"
   ],
   "dependencies": {
-    "socks": "^2.1.2",
+    "mysql": "^2.17.1",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
+    "socks": "^2.1.2",
     "socks-proxy-agent": "^3.0.1"
   },
   "author": "BacooTang",
